@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Game Archive</title>
+    <style>
+        /* Modern Dark Theme */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        h1 { margin: 0; color: #4CAF50; font-size: 2rem; }
+        
+        /* Search Bar */
+        .search-box {
+            margin-top: 15px;
+            padding: 12px 20px;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 25px;
+            border: 2px solid #333;
+            background-color: #2d2d2d;
+            color: white;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .search-box:focus { border-color: #4CAF50; }
+
+        /* Game Grid */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        /* Game Cards */
+        .game-card {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.2s, background 0.2s;
+            border: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            background-color: #2d2d2d;
+            border-color: #4CAF50;
+        }
+        .game-title {
+            font-weight: 600;
+            text-transform: capitalize;
+            font-size: 1.1rem;
+        }
+        .icon { font-size: 2rem; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎮 Game Arcade</h1>
+        <input type="text" id="searchInput" class="search-box" onkeyup="filterGames()" placeholder="Search games (e.g., 'slope', '2048')...">
+    </header>
+
+    <div class="container">
+        <div class="game-grid" id="gameGrid">
+            
+            <a href="1v1lol/index.html" class="game-card"><div class="icon">🔫</div><div class="game-title">1v1.lol</div></a>
+            <a href="among-us/index.html" class="game-card"><div class="icon">🚀</div><div class="game-title">Among Us</div></a>
+            <a href="2048/index.html" class="game-card"><div class="icon">🔢</div><div class="game-title">2048</div></a>
+            <a href="chrome-dino/index.html" class="game-card"><div class="icon">🦖</div><div class="game-title">Chrome Dino</div></a>
+            <a href="cookie-clicker/index.html" class="game-card"><div class="icon">🍪</div><div class="game-title">Cookie Clicker</div></a>
+            <a href="drift-boss/index.html" class="game-card"><div class="icon">🚗</div><div class="game-title">Drift Boss</div></a>
+            <a href="slope/index.html" class="game-card"><div class="icon">🎱</div><div class="game-title">Slope</div></a>
+            <a href="minecraft-classic/index.html" class="game-card"><div class="icon">⛏️</div><div class="game-title">Minecraft</div></a>
+            <a href="subway-surfers/index.html" class="game-card"><div class="icon">🏃</div><div class="game-title">Subway Surfers</div></a>
+            <a href="basket-random/index.html" class="game-card"><div class="icon">🏀</div><div class="game-title">Basket Random</div></a>
+            <a href="retro-bowl/index.html" class="game-card"><div class="icon">🏈</div><div class="game-title">Retro Bowl</div></a>
+            <a href="crossyroad/index.html" class="game-card"><div class="icon">🐔</div><div class="game-title">Crossy Road</div></a>
+            <a href="doodle-jump/index.html" class="game-card"><div class="icon">🦗</div><div class="game-title">Doodle Jump</div></a>
+            <a href="flappy-bird/index.html" class="game-card"><div class="icon">🐦</div><div class="game-title">Flappy Bird</div></a>
+            <a href="temple-run-2/index.html" class="game-card"><div class="icon">🗿</div><div class="game-title">Temple Run 2</div></a>
+            <a href="rooftop-snipers/index.html" class="game-card"><div class="icon">🏙️</div><div class="game-title">Rooftop Snipers</div></a>
+            <a href="getaway-shootout/index.html" class="game-card"><div class="icon">🤸</div><div class="game-title">Getaway Shootout</div></a>
+            <a href="bitlife/index.html" class="game-card"><div class="icon">🧬</div><div class="game-title">Bitlife</div></a>
+            <a href="geometry-dash/index.html" class="game-card"><div class="icon">🟨</div><div class="game-title">Geometry Dash</div></a>
+            <a href="paper-io-2/index.html" class="game-card"><div class="icon">🗺️</div><div class="game-title">Paper.io 2</div></a>
+
+            <a href="10-minutes-till-dawn/index.html" class="game-card"><div class="game-title">10 Minutes Till Dawn</div></a>
+            <a href="a-dance-of-fire-and-ice/index.html" class="game-card"><div class="game-title">Dance of Fire & Ice</div></a>
+            <a href="ages-of-conflict/index.html" class="game-card"><div class="game-title">Ages of Conflict</div></a>
+            <a href="aquapark-slides/index.html" class="game-card"><div class="game-title">Aquapark Slides</div></a>
+            <a href="awesometanks2/index.html" class="game-card"><div class="game-title">Awesome Tanks 2</div></a>
+            <a href="bad-ice-cream/index.html" class="game-card"><div class="game-title">Bad Ice Cream</div></a>
+            <a href="baldis-basics/index.html" class="game-card"><div class="game-title">Baldis Basics</div></a>
+            <a href="cell-machine/index.html" class="game-card"><div class="game-title">Cell Machine</div></a>
+            <a href="cluster-rush/index.html" class="game-card"><div class="game-title">Cluster Rush</div></a>
+            <a href="cubefield/index.html" class="game-card"><div class="game-title">Cubefield</div></a>
+            <a href="deal-or-no-deal/index.html" class="game-card"><div class="game-title">Deal or No Deal</div></a>
+            <a href="death-run-3d/index.html" class="game-card"><div class="game-title">Death Run 3D</div></a>
+            <a href="drive-mad/index.html" class="game-card"><div class="game-title">Drive Mad</div></a>
+            <a href="ducklife4/index.html" class="game-card"><div class="game-title">Duck Life 4</div></a>
+            <a href="edge-surf/index.html" class="game-card"><div class="game-title">Edge Surf</div></a>
+            <a href="evil-glitch/index.html" class="game-card"><div class="game-title">Evil Glitch</div></a>
+            <a href="exo/index.html" class="game-card"><div class="game-title">Exo</div></a>
+
+        </div>
+    </div>
+
+    <script>
+        // Filter functionality
+        function filterGames() {
+            let input = document.getElementById('searchInput');
+            let filter = input.value.toUpperCase();
+            let grid = document.getElementById("gameGrid");
+            let cards = grid.getElementsByClassName('game-card');
+
+            for (let i = 0; i < cards.length; i++) {
+                let title = cards[i].getElementsByClassName("game-title")[0];
+                let txtValue = title.textContent || title.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    cards[i].style.display = "flex";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
